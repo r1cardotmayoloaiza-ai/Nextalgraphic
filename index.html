@@ -47,13 +47,15 @@
     <!-- ===== MAIN ===== -->
     <main class="content" role="main">
 
-      <!-- Categorías -->
-      <nav class="categories" role="tablist" aria-label="Categorías"><button type="button" class="active" data-cat="hamburguesas">Hamburguesas</button><button type="button" class="" data-cat="perros">Perros</button><button type="button" class="" data-cat="sandwiches">Sandwiches</button><button type="button" class="" data-cat="carnes">Carnes</button><button type="button" class="" data-cat="patacones">Patacones</button><button type="button" class="" data-cat="maicitos">Maicitos</button><button type="button" class="" data-cat="salchipapa">Salchipapa</button><button type="button" class="" data-cat="dorilocos">Dorilocos</button><button type="button" class="" data-cat="arepas">Arepas</button><button type="button" class="" data-cat="burritos">Burritos</button><button type="button" class="" data-cat="Jugos">Jugos</button><button type="button" class="" data-cat="limonadas">Limonadas</button><button type="button" class="" data-cat="gaseosas">Gaseosas</button><button type="button" class="" data-cat="malteadas">Malteadas</button></nav>
-
       <!-- Búsqueda -->
-      <div class="search-row">
-        <input id="search" type="search" placeholder="Buscar producto..." aria-label="Buscar productos">
-      </div>
+      <section class="search-section" style="padding: 10px 15px;">
+    <div class="search-container" style="border: 2px solid #00adef !important; background: #000000 !important; border-radius: 25px; display: flex; align-items: center; padding: 5px 15px; height: 45px;">
+      
+      <i class="fa-solid fa-magnifying-glass" style="color: #00adef !important; font-size: 18px; margin-left: 5px;"></i>
+      
+      <input type="text" id="search-input" placeholder="Buscar servicios..." style="background: transparent !important; border: none !important; color: #ffffff !important; width: 100%; outline: none; padding: 0 10px; font-size: 16px;">
+    </div>
+  </section>
 
       <!-- Catálogo -->
       <section id="catalog" class="catalog fade-in" aria-live="polite"><article class="card">
