@@ -48,9 +48,12 @@
     <main class="content" role="main">
 
       <!-- Búsqueda -->
-      <div class="search-row">
-        <input id="search" type="search" placeholder="Buscar producto..." aria-label="Buscar productos">
-      </div>
+      <section class="search-section" style="padding: 10px 15px;">
+    <div class="search-container" style="border: 2px solid #00adef !important; background: #000000 !important; border-radius: 25px; display: flex; align-items: center; padding: 5px 15px;">
+      <i class="fa-solid fa-magnifying-glass search-icon" style="color: #00adef !important; margin-right: 10px;"></i>
+      <input type="text" id="search-input" placeholder="Buscar servicios..." style="background: transparent !important; border: none !important; color: #ffffff !important; width: 100%; outline: none; padding: 10px 0;">
+    </div>
+  </section>
 
       <!-- Catálogo -->
       <section id="catalog" class="catalog fade-in" aria-live="polite"><article class="card">
