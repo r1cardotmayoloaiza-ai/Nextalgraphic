@@ -323,13 +323,16 @@
               <input name="address" type="text" placeholder="Dirección para entrega">
             </label>
 
-            <label>Método de pago
-              <select name="payment" id="payment-method" required="">
-                <option value="" disabled="" selected="">Selecciona una opción</option>
-                <option value="transferencia">Transferencia</option>
-                <option value="efectivo">Efectivo</option>
-              </select>
+                        <label>Método de pago
+              <!-- Valor invisible para que el sistema WhatsApp no haga errores -->
+              <input type="hidden" name="payment" id="payment-method" value="transferencia">
+              
+              <!-- Cajita visual para el cliente (Parecida al botón Atrás) -->
+              <div style="border: 1px solid #00adef; color: #00adef; padding: 10px; border-radius: 8px; text-align: center; margin-top: 8px; font-weight: bold; background: transparent;">
+                Transferencia
+              </div>
             </label>
+
 
              <div id="transfer-info" class="hidden transfer-box">
               <p><strong>La informacion:</strong> de banco</p>
