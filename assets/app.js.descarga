@@ -1851,7 +1851,7 @@ function refreshCartUI() {
   cartItemsEl.innerHTML = '';
 
   if (cart.length === 0) {
-    cartItemsEl.innerHTML = '<div class="empty">Tu carrito está vacío 🍔</div>';
+    cartItemsEl.innerHTML = '<div class="empty">Tu carrito está vacío 🎨</div>';
     cartSubtotalEl.textContent = '$0';
     cartDeliveryEl.textContent = '$0';
     cartTotalEl.textContent = '$0';
@@ -2112,7 +2112,7 @@ checkoutForm.addEventListener('submit', (e) => {
   if (method === 'domicilio') textParts.push(`🏠 Dirección: ${address}`);
   textParts.push(`💳 Pago: ${payment}`);
   textParts.push('');
-  textParts.push('🍔 *Detalle del pedido:*');
+  textParts.push('🎨 *Detalle del pedido:*');
 
   let subtotal = 0;
 
