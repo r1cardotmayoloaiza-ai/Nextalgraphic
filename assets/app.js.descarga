@@ -7,16 +7,22 @@ const DELIVERY_FEE = 0; // tarifa por defecto de domicilio
 // ---------- Datos de ejemplo ----------
 // ---------- Datos de ejemplo ----------
 const products = [
-  { 
+  
+    {
     id: 'b1',
-    category: 'hamburguesas',
-    title: 'Hamburguesa 3 Carnes',
-    price: 30000,
-    desc: 'Pan brioche, pernil de cerdo, filete de pollo, carne artesanal, queso, cebolla, ensalada, tomate y salsa de la casa.',
+    category: 'hamburguesas', /* Lo dejamos así en código para que la página no implosione */
+    title: 'Tarjetas de Presentación',
+    price: 8000,
+    desc: 'Tarjetas full resolución, diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
     image: 'images/3Carnes.png',
-    ingredients: ['Pan Brioche','Pernil de cerdo','Filete de pollo','Carne artesanal','Queso','Cebolla','Ensalada','Tomate','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
+    ingredients: ['Propalcote 300g', 'Corte recto', 'Impresión full resolución'],
+    extras: [
+      { name: 'Mejora a 2x0 / 2x1', price: 2000 },
+      { name: 'Mejora a 4x0 / 4x1', price: 7000 },
+      { name: 'Mejora a 4x4', price: 10000 }
+    ]
   },
+
 
   { 
     id: 'b13',
