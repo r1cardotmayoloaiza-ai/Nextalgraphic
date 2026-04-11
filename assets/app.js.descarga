@@ -26,16 +26,22 @@ const products = [
 
 
 
-  { 
-    id: 'b13',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Ranchera',
-    price: 25000,
-    desc: 'Pan brioche, lechuga, tomate, carne, queso asado, ranchera asada, picadillo de piña y salsa de la casa.',
-    image: 'images/Ranchera.png',
-    ingredients: ['Pan brioche','Lechuga','Tomate','Carne','Queso asado','Ranchera asada','Picadillo de piña','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+     {
+      id: 'v1',
+      category: 'hamburguesas', 
+      title: 'Volantes',
+      price: 10000,
+      desc: 'Volantes con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Volantes.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'v1_op1', label: 'Tintas 1x0', price: 10000, image: 'assets/Volantes.png' },
+        { id: 'v1_op2', label: 'Tintas 2x0', price: 12000, image: 'assets/Volantes.png' },
+        { id: 'v1_op3', label: 'Tintas 4x0', price: 15000, image: 'assets/Volantes.png' },
+        { id: 'v1_op4', label: 'Tintas 4x4', price: 25000, image: 'assets/Volantes.png' }
+      ]
+    },
+
 
   { 
     id: 'b2',
