@@ -2110,49 +2110,42 @@ checkoutForm.addEventListener('change', updateCheckoutTotals);
   
     let textParts = [];
   
-    // Cabecera Corporativa
-    textParts.push(`🎨 *Nuevo Proyecto de Diseño - Nextal Graphic* 🚀`);
-    textParts.push(`👤 Cliente: ${clientName}`);
-    textParts.push(`📞 WhatsApp: ${clientPhone}`);
-    textParts.push(`📂 Tipo de Entrega: Envío Digital (Correo/Drive)`);
-    textParts.push(`💳 Método de Pago: ${payment}`);
+    // Cabecera Corporativa (¡Emojis en código robótico anti-fallos!)
+    textParts.push(`\u{1F3A8} *Nuevo Proyecto de Diseño - Nextal Graphic* \u{1F680}`);
+    textParts.push(`\u{1F464} Cliente: ${clientName}`);
+    textParts.push(`\u{1F4DE} WhatsApp: ${clientPhone}`);
+    textParts.push(`\u{1F4C2} Tipo de Entrega: Envío Digital (Correo/Drive)`);
+    textParts.push(`\u{1F4B3} Método de Pago: ${payment}`);
     textParts.push('');
-    textParts.push(`📝 *Detalle del Proyecto:*`);
+    textParts.push(`\u{1F4DD} *Detalle del Proyecto:*`);
   
     let subtotal = 0;
   
     cart.forEach(item => {
-      // Sumar posibles Adiciones extra a la Variedad elegida
       const extrasTotal = (item.extras || []).reduce((acc, current) => acc + (current.price * current.qty), 0);
       const itemTotal = (item.price + extrasTotal) * item.qty;
       subtotal += itemTotal;
   
-      // Imprimir Producto ("1x Tarjetas de Presentación (Tintas 4x4) - $18.000")
       textParts.push(`${item.qty}x ${item.title} (${item.sizeLabel || 'Básico'}) — *$${numberWithCommas(itemTotal)}*`);
-      
-      // Agregados fijos de Imprenta
       textParts.push(`   Formato: PDF para imprenta + Editable (.AI)`);
       textParts.push(`   Modo de Color: CMYK (Alta fidelidad)`);
       
-      // Si el cliente agregó adiciones extra con botones [- 1 +], saldrán acá
       const extrasLines = (item.extras || [])
-        .map(e => `   ➕ ${e.qty}x ${e.name} (+$${numberWithCommas(e.price * e.qty)})`)
+        .map(e => `   \u{2795} ${e.qty}x ${e.name} (+$${numberWithCommas(e.price * e.qty)})`)
         .join('\n');
       if (extrasLines) textParts.push(extrasLines);
     });
   
     textParts.push('');
-    textParts.push(`💰 Subtotal: $${numberWithCommas(subtotal)}`);
-    textParts.push(`✅ *Total: $${numberWithCommas(subtotal)}*`);
+    textParts.push(`\u{1F4B0} Subtotal: $${numberWithCommas(subtotal)}`);
+    textParts.push(`\u{2705} *Total: $${numberWithCommas(subtotal)}*`);
   
-    // Sección de Notas (Brief)
     if (notes) {
       textParts.push('');
-      textParts.push(`📌 *Notas del Brief:*`);
+      textParts.push(`\u{1F4CC} *Notas del Brief:*`);
       textParts.push(`> "${notes}"`);
     }
   
-    // Construir URL para WhatsApp
     const bp = String(BUSINESS_PHONE || '').replace(/\D/g, '');
     if (!bp || bp.length < 8) {
       alert('Configura BUSINESS_PHONE en app.js con el número del negocio.');
@@ -2164,6 +2157,7 @@ checkoutForm.addEventListener('change', updateCheckoutTotals);
   
     window.open(waUrl, '_blank');
   });
+
 
 
 
