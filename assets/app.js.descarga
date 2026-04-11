@@ -14,7 +14,7 @@ const products = [
     title: 'Tarjetas de Presentación',
     price: 8000,
     desc: 'Tarjetas full resolución, diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
-    image: 'assets/3Carnes.png',
+    image: 'Mockup Tarjetas de presentación',
     ingredients: [], 
     sizes: [
       { id: 't1', label: 'Tintas 1x0 / 1x1', price: 8000, image: 'assets/3Carnes.png' },
