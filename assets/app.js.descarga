@@ -2106,18 +2106,31 @@ checkoutForm.addEventListener('change', updateCheckoutTotals);
     const clientName = fd.get('name')?.trim() || '';
     const clientPhone = fd.get('phone')?.trim() || '';
     const payment = fd.get('payment') || 'Transferencia';
-    const notes = fd.get('notes')?.trim() || '';
+    const notesInput = fd.get('notes')?.trim() || '';
+  
+    // Construyendo emojis invencibles nativos
+    const ePa = String.fromCodePoint(0x1F3A8); // Paleta
+    const eRo = String.fromCodePoint(0x1F680); // Cohete
+    const eUs = String.fromCodePoint(0x1F464); // Usuario
+    const eWh = String.fromCodePoint(0x1F4DE); // Teléfono
+    const eDi = String.fromCodePoint(0x1F4C2); // Carpeta
+    const ePaG = String.fromCodePoint(0x1F4B3); // Tarjeta
+    const eDe = String.fromCodePoint(0x1F4DD); // Nota
+    const eSu = String.fromCodePoint(0x1F4B0); // Dinero
+    const eTo = String.fromCodePoint(0x2705); // Check
+    const eNo = String.fromCodePoint(0x1F4CC); // Pin
+    const ePl = String.fromCodePoint(0x2795); // Suma
   
     let textParts = [];
   
-    // Cabecera Corporativa (¡Emojis en código robótico anti-fallos!)
-    textParts.push(`\u{1F3A8} *Nuevo Proyecto de Diseño - Nextal Graphic* \u{1F680}`);
-    textParts.push(`\u{1F464} Cliente: ${clientName}`);
-    textParts.push(`\u{1F4DE} WhatsApp: ${clientPhone}`);
-    textParts.push(`\u{1F4C2} Tipo de Entrega: Envío Digital (Correo/Drive)`);
-    textParts.push(`\u{1F4B3} Método de Pago: ${payment}`);
+    // Textos limpios sin tildes delicadas ni ñ
+    textParts.push(`${ePa} *Nuevo Proyecto de Diseno - Nextal Graphic* ${eRo}`);
+    textParts.push(`${eUs} Cliente: ${clientName}`);
+    textParts.push(`${eWh} WhatsApp: ${clientPhone}`);
+    textParts.push(`${eDi} Tipo de Entrega: Envio Digital (Correo/Drive)`);
+    textParts.push(`${ePaG} Metodo de Pago: ${payment}`);
     textParts.push('');
-    textParts.push(`\u{1F4DD} *Detalle del Proyecto:*`);
+    textParts.push(`${eDe} *Detalle del Proyecto:*`);
   
     let subtotal = 0;
   
@@ -2126,29 +2139,30 @@ checkoutForm.addEventListener('change', updateCheckoutTotals);
       const itemTotal = (item.price + extrasTotal) * item.qty;
       subtotal += itemTotal;
   
-      textParts.push(`${item.qty}x ${item.title} (${item.sizeLabel || 'Básico'}) — *$${numberWithCommas(itemTotal)}*`);
+      textParts.push(`${item.qty}x ${item.title} (${item.sizeLabel || 'Basico'}) — *$${numberWithCommas(itemTotal)}*`);
       textParts.push(`   Formato: PDF para imprenta + Editable (.AI)`);
       textParts.push(`   Modo de Color: CMYK (Alta fidelidad)`);
       
       const extrasLines = (item.extras || [])
-        .map(e => `   \u{2795} ${e.qty}x ${e.name} (+$${numberWithCommas(e.price * e.qty)})`)
+        .map(ex => `   ${ePl} ${ex.qty}x ${ex.name} (+$${numberWithCommas(ex.price * ex.qty)})`)
         .join('\n');
       if (extrasLines) textParts.push(extrasLines);
     });
   
     textParts.push('');
-    textParts.push(`\u{1F4B0} Subtotal: $${numberWithCommas(subtotal)}`);
-    textParts.push(`\u{2705} *Total: $${numberWithCommas(subtotal)}*`);
+    textParts.push(`${eSu} Subtotal: $${numberWithCommas(subtotal)}`);
+    textParts.push(`${eTo} *Total: $${numberWithCommas(subtotal)}*`);
   
-    if (notes) {
+    if (notesInput) {
       textParts.push('');
-      textParts.push(`\u{1F4CC} *Notas del Brief:*`);
-      textParts.push(`> "${notes}"`);
+      textParts.push(`${eNo} *Notas del Brief:*`);
+      textParts.push(`> "${notesInput}"`);
     }
   
+    // Envío oficial
     const bp = String(BUSINESS_PHONE || '').replace(/\D/g, '');
     if (!bp || bp.length < 8) {
-      alert('Configura BUSINESS_PHONE en app.js con el número del negocio.');
+      alert('Configura BUSINESS_PHONE en la linea 4.');
       return;
     }
   
