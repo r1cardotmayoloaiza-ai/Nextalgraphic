@@ -89,16 +89,19 @@ const products = [
     },
 
 
-  { 
-    id: 'b5',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Royal',
-    price: 24000,
-     desc: 'Pan brioche, lechuga, guacamole, tomate, pollo en salsa, carne artesanal, salsa de la casa, queso a la plancha, cebolla con tocineta caramelizada, trozos de pollo y ranchera',
-    image: 'images/Royal.png',
-    ingredients: ['Pan Brioche','Lechuga','Guacamole','Tomate','Carne Artesanal','Tocineta','Queso salado','Salsa tártara','Cebolla grille'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+     {
+      id: 'd1',
+      category: 'hamburguesas', 
+      title: 'Diseño Editorial',
+      price: 80000,
+      desc: 'Diseño editorial profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Editorial.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'd1_op1', label: 'Tintas 4x4', price: 80000, image: 'assets/Editorial.png' }
+      ]
+    },
+
 
   { 
     id: 'b6',
