@@ -240,6 +240,21 @@ const products = [
       ]
     },
 
+    {
+      id: 'bo1',
+      category: 'hamburguesas', 
+      title: 'Boleta',
+      price: 12000,
+      desc: 'Boleta con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Boleta.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'bo1_op1', label: 'Tintas 1x0', price: 12000, image: 'assets/Boleta.png' },
+        { id: 'bo1_op2', label: 'Tintas 4x0', price: 17000, image: 'assets/Boleta.png' }
+      ]
+    },
+
+
 
 
   // === PERROS ===
