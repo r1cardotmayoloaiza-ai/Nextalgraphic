@@ -178,7 +178,7 @@ const products = [
       title: 'Carnet',
       price: 15000,
       desc: 'Carnet con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
-      image: 'assets/AQUI_TU_FOTO.png',
+      image: 'assets/Carnet.png',
       ingredients: [], 
       sizes: [
         { id: 'cn1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Carnet.png' }
