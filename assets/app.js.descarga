@@ -254,6 +254,21 @@ const products = [
       ]
     },
 
+    {
+      id: 'in1',
+      category: 'hamburguesas', 
+      title: 'Individual',
+      price: 12000,
+      desc: 'Individual con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Individual.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'in1_op1', label: 'Tintas 1x0 / 2x0', price: 12000, image: 'assets/Individual.png' },
+        { id: 'in1_op2', label: 'Tintas 4x0', price: 25000, image: 'assets/Individual.png' }
+      ]
+    },
+
+
 
 
 
