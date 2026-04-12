@@ -296,6 +296,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'etb1',
+      category: 'hamburguesas', 
+      title: 'Etiqueta para Botella',
+      price: 20000,
+      desc: 'Etiqueta con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Etiqueta1.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'etb1_op1', label: 'Tintas 4x0', price: 20000, image: 'assets/Etiqueta1.png' }
+      ]
+    },
 
 
   // === PERROS ===
