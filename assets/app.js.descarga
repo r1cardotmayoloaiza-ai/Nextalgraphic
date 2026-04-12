@@ -309,6 +309,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'st1',
+      category: 'hamburguesas', 
+      title: 'Sticker',
+      price: 15000,
+      desc: 'Sticker con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Sticker.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'st1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Sticker.png' }
+      ]
+    },
+
+
 
   // === PERROS ===
 {  
