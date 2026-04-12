@@ -103,16 +103,18 @@ const products = [
     },
 
 
-  { 
-    id: 'b6',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Combinada',
-    price: 23000,
-    desc: 'Pan brioche, carne artesanal, filete de pollo, queso, tocineta, ensalada, tomate, salsa de la casa y aros de cebolla.',
-    image: 'images/combinada.png',
-    ingredients: ['Pan Brioche','Carne Artesanal','Filete de Pollo','Tocineta','Queso','Ensalada','Tomate','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+    {
+      id: 'r1',
+      category: 'hamburguesas', 
+      title: 'Revista Digital',
+      price: 80000,
+      desc: 'Revista digital con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Revista.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'r1_op1', label: 'Tintas 4x4', price: 80000, image: 'assets/Revista.png' }
+      ]
+    },
 
   { 
     id: 'b7',
