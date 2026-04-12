@@ -144,16 +144,19 @@ const products = [
     },
 
 
-  { 
-    id: 'b14',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Pernil de Cerdo',
-    price: 19500,
-    desc: 'Pan brioche, pernil de cerdo, queso, tocineta, aros de cebolla, ensalada, tomate y salsa de la casa.',
-    image: 'images/hamburgesa14.png',
-    ingredients: ['Pan Brioche','Pernil de cerdo','Queso','Tocineta','Cebolla','Tomate','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
+    {
+      id: 'l1',
+      category: 'hamburguesas', 
+      title: 'Libro Impreso / Digital',
+      price: 350000,
+      desc: 'Libros con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Libro.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'l1_op1', label: 'Tintas 4x4', price: 350000, image: 'assets/Libro.png' }
+      ]
+    },
+
 
   { 
     id: 'b9',
