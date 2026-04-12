@@ -199,17 +199,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'mg1',
+      category: 'hamburguesas', 
+      title: 'Mug Personalizado',
+      price: 15000,
+      desc: 'Mug con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Taza.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'mg1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Taza.png' }
+      ]
+    },
 
-  { 
-    id: 'b12',
-    category: 'hamburguesas',
-    title: 'Hamburguesa Tradicional',
-    price: 17000,
-    desc: 'Pan brioche, carne artesanal, queso, tocineta, ensalada, tomate y salsa de la casa.',
-    image: 'images/hamburgesa12.png',
-    ingredients: ['Pan Brioche','Carne Artesanal','Queso','Cebolla','Ensalada','Tomate','Salsa de la casa'],
-    extras: [{ name:'Maicitos',price:2500 },{ name:'Pollo esmechado',price:5000 },{ name:'Carne esmechada',price:5500 },{ name:'Tocino',price:9000 },{ name:'Costilla',price:8000 },{ name:'Porción de papas a la francesa',price:7000 },{ name:'Unidad de huevo de codorniz',price:1500 },{ name:'Huevos de codorniz 5 unidades',price:4000 },{ name:'Queso',price:3000 },{ name:'Tocineta',price:3000 }]
-  },
   // === PERROS ===
 {  
   id: 'p1',
