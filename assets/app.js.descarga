@@ -493,6 +493,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'cv1',
+      category: 'hamburguesas', 
+      title: 'Corte Vinilo',
+      price: 15000,
+      desc: 'Corte Vinilo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Vinilo.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'cv1_op1', label: 'Tintas 1x0', price: 15000, image: 'assets/Vinilo.png' }
+      ]
+    },
 
 
 
