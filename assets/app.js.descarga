@@ -376,6 +376,18 @@ const products = [
       ]
     },
 
+    {
+      id: 'af1',
+      category: 'hamburguesas', 
+      title: 'Afiche',
+      price: 15000,
+      desc: 'Afiche con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Afiche.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'af1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Afiche.png' }
+      ]
+    },
 
 
 
