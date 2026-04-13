@@ -688,6 +688,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'ba1',
+      category: 'hamburguesas', 
+      title: 'Banner Animado Web',
+      price: 95000,
+      desc: 'Banner animado profesional optimizado para web. Archivos en alta resolución y formatos listos para dinamizar ecosistemas digitales.',
+      image: 'assets/Banner2.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'ba1_op1', label: 'Tintas 4x0', price: 95000, image: 'assets/Banner2.png' }
+      ]
+    },
+
 
 
   // === PERROS ===
