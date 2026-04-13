@@ -584,6 +584,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'fm1',
+      category: 'hamburguesas', 
+      title: 'Foto montaje',
+      price: 20000,
+      desc: 'Foto Montaje profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Fotomontaje.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'fm1_op1', label: 'Tintas 4x0', price: 20000, image: 'assets/Fotomontaje.png' }
+      ]
+    },
+
 
 
 
