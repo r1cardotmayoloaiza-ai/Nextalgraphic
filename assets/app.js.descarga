@@ -441,6 +441,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'sm1',
+      category: 'hamburguesas', 
+      title: 'Social Media Post',
+      price: 20000,
+      desc: 'Post profesional optimizado para Redes sociales.',
+      image: 'assets/Post.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'sm1_op1', label: 'Tintas 4x0', price: 20000, image: 'assets/Post.png' }
+      ]
+    },
+
+
 
 
 
