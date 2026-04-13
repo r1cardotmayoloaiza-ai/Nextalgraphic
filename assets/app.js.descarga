@@ -571,6 +571,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'rf1',
+      category: 'hamburguesas', 
+      title: 'Retoque Fotográfico',
+      price: 15000,
+      desc: 'Retoque Fotográfico profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Retoque.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'rf1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Retoque.png' }
+      ]
+    },
+
 
 
 
