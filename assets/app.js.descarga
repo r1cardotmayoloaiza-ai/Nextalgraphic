@@ -558,6 +558,19 @@ const products = [
       ]
     },
 
+    {
+      id: 'cv2',
+      category: 'hamburguesas', 
+      title: 'Currículum',
+      price: 20000,
+      desc: 'Curriculum profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Curriculum.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'cv2_op1', label: 'Tintas 4x0', price: 20000, image: 'assets/Curriculum.png' }
+      ]
+    },
+
 
 
 
