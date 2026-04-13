@@ -701,6 +701,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'hab1',
+      category: 'hamburguesas', 
+      title: 'Hablador',
+      price: 15000,
+      desc: 'Hablador profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Hablador.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'hab1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Hablador.png' },
+        { id: 'hab1_op2', label: 'Tintas 4x4', price: 22000, image: 'assets/Hablador.png' }
+      ]
+    },
+
 
 
   // === PERROS ===
