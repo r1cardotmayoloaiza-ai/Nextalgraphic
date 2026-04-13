@@ -616,7 +616,7 @@ const products = [
       title: 'Aviso',
       price: 15000,
       desc: 'Aviso profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
-      image: 'assets/Avisos.png',
+      image: 'assets/Aviso.png',
       ingredients: [], 
       sizes: [
         { id: 'av1_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Avisos.png' }
