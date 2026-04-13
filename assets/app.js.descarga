@@ -662,6 +662,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'ani1',
+      category: 'hamburguesas', 
+      title: 'Animación 2D / 3D',
+      price: 12000,
+      desc: 'Animación profesional en alta fidelidad. Formatos listos para brillar en plataformas digitales, publicidad y redes sociales.',
+      image: 'assets/Animacion.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'ani1_op1', label: 'Tintas 4x4', price: 12000, image: 'assets/Animacion.png' }
+      ]
+    },
+
+
 
 
   // === PERROS ===
