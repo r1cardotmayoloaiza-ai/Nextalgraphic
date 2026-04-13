@@ -402,6 +402,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'lo1',
+      category: 'hamburguesas', 
+      title: 'Logo 1 Propuesta',
+      price: 70000,
+      desc: 'Logo profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Logo1.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'lo1_op1', label: 'Tintas 4x0', price: 70000, image: 'assets/Logo1.png' }
+      ]
+    },
+
+
 
 
 
