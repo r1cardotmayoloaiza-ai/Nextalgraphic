@@ -350,6 +350,20 @@ const products = [
       ]
     },
 
+    {
+      id: 'inv2',
+      category: 'hamburguesas', 
+      title: 'Invitación Fotográfica',
+      price: 15000,
+      desc: 'Invitación fotográfica con diseño profesional optimizado para impresión, archivos en alta fidelidad y formatos listos para imprenta (CMYK).',
+      image: 'assets/Fotografica.png',
+      ingredients: [], 
+      sizes: [
+        { id: 'inv2_op1', label: 'Tintas 4x0', price: 15000, image: 'assets/Fotografica.png' }
+      ]
+    },
+
+
 
 
   // === PERROS ===
