@@ -842,11 +842,17 @@
   <!-- ===== FOOTER REMOVED FROM HERE (MOVED TO MAIN) ===== -->
   <!-- ✅ SweetAlert2 -->
  <script src="assets/sweetalert2@11"></script>
- <script>Swal.fire({
-  icon: 'success', 
-  title: 'Atencion!',
-  text: 'El costo del domicilio dependerá de tu sector y condiciones climaticas. Recuerda agregar tus productos y bebidas favoritas. Al recibir tu orden la pondremos en marcha. Feliz día',
-  confirmButtonText: 'Aceptar',
+<script>Swal.fire({
+  icon: 'info', 
+  title: '¡Importante! 🚨',
+  html: '<div style="text-align: left; font-size: 0.95em; line-height: 1.5;">' +
+        '<p>Para procesar tu diseño con éxito, sigue estos pasos:</p>' +
+        '<p>🛒 <b>Selecciona tus productos:</b> Agrégalos al carrito.</p>' +
+        '<p>📝 <b>Danos detalles:</b> En la sección de "Notas" del pedido, escribe toda la información que debe llevar tu diseño (textos, ideas o especificaciones).</p>' +
+        '<p>📎 <b>Envía tus archivos:</b> Una vez confirmado el pedido, el sistema te redirigirá a WhatsApp para que nos envíes tus logos o imágenes de referencia.</p>' +
+        '<p style="text-align: center; margin-top: 15px;">🚀 <b style="color: #00adef;">¡Al recibir tu orden, nuestro equipo creativo se pondrá en marcha!</b></p>' +
+        '</div>',
+  confirmButtonText: '¡Entendido!',
   background: '#0a0a0a',             // Fondo negro
   color: '#ffffff',                   // Texto blanco
   confirmButtonColor: '#00adef', // Botón celeste
